@@ -19,7 +19,7 @@ public class forEx6 {
             fact *= i;
 
         }
-        System.out.println(num + " != " + fact);
+        System.out.println(num + " ! = " + fact);
 
     }
 }
