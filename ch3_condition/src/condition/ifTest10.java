@@ -8,8 +8,8 @@ public class ifTest10 {
         Scanner scan = new Scanner(System.in);
         System.out.println("첫번째 수 입력");
         String input = scan.nextLine();
-        int num1 = Integer.parseInt(input);
-
+        int num1 = Integer.parseInt(input); 
+        //int num1 = Integer.parseInt(input); > int num1 = getNum1(input);
         System.out.println("두번째 수 입력");
         input = scan.nextLine();
         int num2 = Integer.parseInt(input);
