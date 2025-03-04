@@ -1,6 +1,7 @@
 package array;
 // int [][] array; // 2차 배열 기본 선언
 
+// 한번 생성하면 변경 불가
 // array = new int [1] [5]; // 2차 배열 초기화 : 배열 갯수 정의 > [] :행(세로) + [] :열(가로)
 // int [][] array2 = new int [1] [5]; // 2차 배열 선언 and 초기화
 // int [][] array3 = {{1,2,3}, {4,5,6}}; // 입력되는 값을 알고있을때 수를 직접 지정하여 출력
@@ -63,14 +64,14 @@ public class arrayEx0 {
         System.out.printf("\tsum : 배열의 총합: %d%n\n", sum);
         System.out.printf("\t배열의 최소값: %d (위치: [%d][%d])%n", min, minRow, minCol);
         System.out.printf("\t배열의 최대값: %d (위치: [%d][%d])%n", max, maxRow, maxCol);
-        
+
         // 응용 : 가변 길이 배열
         int[][] array2 = new int[3][];
-        boolean isFirstValue2 = true; //첫번째 값인지 확인하는 변수 
+        boolean isFirstValue2 = true; // 첫번째 값인지 확인하는 변수
 
-        array2[0] = new int[2]; //1행의 열 갯수 
-        array2[1] = new int[4]; //2행의 열 갯수 
-        array2[2] = new int[3]; //3행의 열 갯수
+        array2[0] = new int[2]; // 1행의 열 갯수
+        array2[1] = new int[4]; // 2행의 열 갯수
+        array2[2] = new int[3]; // 3행의 열 갯수
 
         array2[0][0] = 5; // 배열 요소 값
         array2[0][1] = 10;
@@ -84,7 +85,7 @@ public class arrayEx0 {
         array2[2][1] = 40;
         array2[2][2] = 45;
 
-        int sum2 = 0; // sum2 변수 초기화 
+        int sum2 = 0; // sum2 변수 초기화
         int min2 = Integer.MAX_VALUE, minRow2 = -1, minCol2 = -1;
         int max2 = Integer.MIN_VALUE, maxRow2 = -1, maxCol2 = -1;
 
@@ -104,10 +105,10 @@ public class arrayEx0 {
                         maxRow2 = i;
                         maxCol2 = j;
                     }
-                    if (isFirstValue2) {  // 첫번째 값만 특별하게 출력하고 이후 값들과 차이를 두기 위해 사용 
+                    if (isFirstValue2) { // 첫번째 값만 특별하게 출력하고 이후 값들과 차이를 두기 위해 사용
                         System.out.printf("\tsum2[%d][%d] 의 값은 %d%n ", i, j, array2[i][j]);
-                        isFirstValue2 = false; // true를 만족하는 isFirstValue 변수의 첫번째 값이 출력 된 후 
-                                               // false로 변경하여 다음 값들은 false 조건을 만족하는 else문을 실행하도록 만듬 
+                        isFirstValue2 = false; // true를 만족하는 isFirstValue 변수의 첫번째 값이 출력 된 후
+                                               // false로 변경하여 다음 값들은 false 조건을 만족하는 else문을 실행하도록 만듬
                     } else {
                         System.out.printf("\tsum2[%d][%d] 의 값은 %d이고, 합은 %d%n ", i, j, array2[i][j], sum2);
                     }
