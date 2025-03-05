@@ -36,21 +36,24 @@ public class student {
     }
 
     // 기능 : 전화번호 변경 , 이메일 변경 , 학년 변경 , 반 변경
-    // 메소드 : 리턴 타입 메소드명 (){}
-    void changeTel() {
-
+    // 메소드 : 리턴 타입, 메소드명 (){}
+    // 리턴(반환) 타입: 기본타입(int , String , boolean , double), 객체(대문자로 시작), 배열, void(리턴타입
+    // 없음)
+    void changeTel(String phone) {
+        // this : 멤버 변수 앞, 멤버 메소드 앞 지금 가지고있는 값을 새로 들어오는 값으로 변경
+        this.phone = phone;
     }
 
-    void changeEmail() {
-
+    void changeEmail(String email) {
+        this.email = email;
     }
 
-    void changeGrade() {
-
+    void changeGrade(int grade) {
+        this.grade = grade;
     }
 
-    void changeClassNum() {
-
+    void changeClassNum(int classNum) {
+        this.classNum = classNum;
     }
 
     @Override

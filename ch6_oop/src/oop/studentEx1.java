@@ -12,5 +12,8 @@ public class studentEx1 {
         System.out.println(student2);
         System.out.println(student3);
 
+        // 홍길동 전화번호 변경
+        student3.changeTel("010-5978-1234");
+        System.out.println(student3);
     }
 }
