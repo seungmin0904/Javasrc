@@ -27,14 +27,31 @@ public class Account {
     }
 
     // 기능 입금 출금
+    public long getBalance() {
+        return balance;
+    }
+    
     void deposit(long amount) {
-        this.balance += amount;
 
+        if (amount > 0) {
+            this.balance += amount;
+            System.out.println(amount + " 원 입금됨 " + "현재 잔액" + balance + "원");
+
+        } else {
+            System.out.println("입금 불가! 입금액이 유효하지 않습니다.");
+
+        }
     }
 
     void withdraw(long amount) {
-        this.balance -= amount;
 
+        if (amount > 0 && this.balance >= amount) {
+            this.balance -= amount;
+            System.out.println(amount + "원 출금됨. 현재 잔액:" + balance + "원");
+
+        } else {
+            System.out.println("출금 불가! 잔액 부족 또는 유효하지 않은 금액입니다.");
+            System.out.println("현재 잔액: " + balance + "원, 출금 시도 액: " + amount + "원");
+        }
     }
-
 }
