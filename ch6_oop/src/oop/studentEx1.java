@@ -41,6 +41,7 @@ public class studentEx1 {
         System.out.println(student3);
     }
 
+    // student 클래스 파일확인
     public static void studentInfo(student student) {
         System.out.println("============================");
         System.out.println("아이디 : " + student.getStuId());
