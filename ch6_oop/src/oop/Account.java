@@ -30,7 +30,7 @@ public class Account {
     public long getBalance() {
         return balance;
     }
-    
+
     void deposit(long amount) {
 
         if (amount > 0) {
