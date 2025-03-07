@@ -60,12 +60,12 @@ public class AccountEx4 {
         System.out.print("계좌 주 성함 : ");
         String owner = sc.nextLine();
 
-        // 잔액
+        // 계좌 생성 시 조건에 대한 출력
         System.out.print("금액 (1000원 이상) : ");
         int balance = Integer.parseInt(sc.nextLine());
 
-        // 입금액이 1000원 미만일 경우
-        if (balance < 1000) {
+        // 계좌 생성 시 조건 추가 (1000원 이상 입금)
+        if (balance < 1000) { // 계좌 생성 시 1000원 미만 일 경우
             System.out.println("계좌 개설 시 1000원 이상 입금해야 합니다.");
             return; // 1000원 미만이면 계좌 생성하지 않음
         }
@@ -73,10 +73,10 @@ public class AccountEx4 {
         // 계좌가 배열에 저장 될 수 있는지 확인 후 , 저장
         // => for : account[i] 첫번째 만나는 null이면
         for (int j = 0; j < account.length; j++) {
-            if (account[j] == null) { // 빈 공간이 있을 경우(null)
-                account[j] = new Account1(ano, owner, balance); // 계좌 생성 후 배열에 저장
+            if (account[j] == null) { // 빈 공간(null)이 있을 경우
+                account[j] = new Account1(ano, owner, balance); // 계좌번호, 계좌 주, 잔액(멤버변수) 속성을 가진 계좌 생성 후 배열에 저장
                 System.out.println("계좌가 생성되었습니다.");
-                break; // 계좌 생성 후 루프 종료 > break가 없으면 무한대로 생성함
+                break; // 계좌 생성 후 루프 종료 > break가 없으면 생성된 배열만큼 생성함
             }
         }
 
@@ -102,7 +102,7 @@ public class AccountEx4 {
         // }
         boolean accountExists = false; // 계좌가 하나라도 있으면 true로 설정
         for (Account1 acc : account) {
-            if (acc != null) { // 계좌가 존재하면
+            if (acc != null) { // 계좌가 존재하면 == acc의 값이 null(빈공간)이 아니면
                 System.out.printf("계좌번호 : %s\t 계좌주 성함 : %s\t 잔액 : %d\n", acc.getAno(), acc.getOwner(),
                         acc.getBalance());
                 accountExists = true; // 계좌가 있으면 true로 설정
