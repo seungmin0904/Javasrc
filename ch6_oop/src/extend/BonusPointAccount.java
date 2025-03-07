@@ -19,6 +19,7 @@ public class BonusPointAccount extends Account {
     void deposit(long amount) {
         // 예금하다
         super.deposit(amount);
+        System.out.println(amount + "원 예금 완료");
         // 보너스 포인트 추가
         bonusPoint += amount * 0.01;
 

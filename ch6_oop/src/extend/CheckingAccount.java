@@ -23,8 +23,9 @@ public class CheckingAccount extends Account {
 
         }
         // 비용 지불 : 잔액 = 잔액 - 사용액
-
         withdraw(amount);
+        // 결제 금액 출력
+        System.out.println(amount + "원 결제");
         // 잔액 리턴
         return getBalance();
     }

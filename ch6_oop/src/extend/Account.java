@@ -10,40 +10,46 @@ public class Account {
     private String ano;
     private String owner;
     private long balance;
+    protected long lastWithdrawnAmount = 0; // 출금 금액 기록
 
+    
     public Account() {
     }
-
+    
     public Account(String ano, String owner, long balance2) {
         this.ano = ano;
         this.owner = owner;
         this.balance = balance2;
-
+        
     }
-
+    
     public String getAno() {
         return ano;
     }
-
+    
     public String getOwner() {
         return owner;
     }
-
+    
     public long getBalance() {
         return balance;
     }
-
+    
     public void setBalance(long balance) {
         this.balance = balance;
+    }
+    
+    public long getLastwithdrawnAmount(){
+        return lastWithdrawnAmount;
     }
 
     @Override
     public String toString() {
         return "Account [ano=" + ano + ", owner=" + owner + ", balance=" + balance + "]";
     }
-
+    
     // 기능 입금 출금
-
+    
     void deposit(long amount) {
         this.balance += amount;
     }
@@ -53,7 +59,8 @@ public class Account {
             throw new Exception("잔액 확인");
 
             // this.balance -= amount;
-
+            
         }
+        this.balance -= amount;
     }
 }
