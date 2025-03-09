@@ -57,6 +57,7 @@ public class Account {
     }
 
     public String getEmail() {
+        System.out.println();
         return email;
     }
 
