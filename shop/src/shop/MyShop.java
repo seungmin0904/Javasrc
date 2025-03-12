@@ -2,8 +2,6 @@ package shop;
 
 import java.util.Scanner;
 
-import oop.product;
-
 public class MyShop implements IShop {
     Scanner sc = new Scanner(System.in);
 

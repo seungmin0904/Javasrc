@@ -1,0 +1,19 @@
+exception (예외)
+발생시점
+1) 컴파일 에러 : 컴파일 시 
+2) 런타임 에러 : 실행 시
+    (1) error : 메모리 부족 , 스택오버플로우
+    (2) exception : 수습 가능
+
+object
+
+RuntimeException 아래 나오는 에러는 런타임 에러 
+
+Exception 처리
+try ~ catch catch는 여러개 사용 가능
+
+try{
+    예외가 발생 할 가능성이 있는 문장을 삽입
+}catch(Exception ex){
+    Exception 이 발생하면 처리하기 위한 문장 삽입
+}

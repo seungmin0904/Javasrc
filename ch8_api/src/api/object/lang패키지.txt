@@ -1,0 +1,30 @@
+java.lang 패키지
+1. Object
+- 모든클래스의 최고 조상
+- equals() : 주소값 비교 혹은 값비교를 선택해 재정의 할 수 있다
+- toString() : 멤버 변수 값 출력 용도로 재정의
+
+
+2. String 
+- 문자열을 다루기 위한 클래스
+     - String str1 = ""; (재사용개념)
+     - String str1 = new String("안녕하세요");  (새로운 인스턴스 할당)
+
+- 변경이 불가능한(immutable) 클래스
+- 주요 메소드
+1)length() : 문자열 길이
+2)charAt(index) : dlseprtmdp goekdgksms answk cnffur
+3)indexOf("") : 문자열 포함 여부(시작 지점부터 찾기)
+  lastindexOf("")  : 문자열 포함 여부(끝지점부터 찾기)
+4)contains("") : 문자열 포함 여부에 따라 true or false 로 반환
+5)toCharArray() : 문자열 => char배열
+6)equals("") : 문자열 비교
+  equalsIgnoreCase("") : 대소문자 구분없이 문자열 비교
+7)concat("") : 문자열 연결 (+)
+8)endWith("") : 지정 된 문자열로 종료 하는지
+  startWith("") : 지정 된 문자열로 시작 하는지
+9)replace("원본" , "변경") :원본 찾아서 변경할 문자열로 변경
+  replaceAll("원본","변경") :원본 찾아서 변경할 문자열로 전체변경
+  (지정 된 타입에 따른 문자열 전체를 사용자가 지정한 문자열로 바꿔줌)
+  replaceFirst("원본","변경"):원본 찾아서 변경할 문자열로 처음만 변경
+
