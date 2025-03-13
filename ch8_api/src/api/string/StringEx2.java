@@ -21,11 +21,11 @@ public class StringEx2 {
             chArr[i] = str.charAt(i);
 
         }
-
         System.out.println("chArr " + Arrays.toString(chArr));
 
         // String => char배열로 변환
         char[] result = str.toCharArray();
+        System.out.println("toChrArray 테스트" + result);
 
         // indexOf(str): 주어진 문자가 문자열에 존재하면 0 없으면 -1로 반환함
         System.out.println("주어진 문자가 문자열에 존재하는지 여부" + str.indexOf("안"));
