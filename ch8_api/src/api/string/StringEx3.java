@@ -15,7 +15,7 @@ public class StringEx3 {
         str2 = str2.concat("반갑습니다");
         System.out.println(str2);
 
-        // endsWith() : 지정된 문자로 끝나는지 , startWith()
+        // 지정된 문자로 endsWith() 끝나는지 , startWith() 시작하는지
         System.out.println(str.endsWith("요"));
         System.out.println(str.startsWith("요"));
 
