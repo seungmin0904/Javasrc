@@ -50,7 +50,7 @@ public class StringEx2 {
         }
 
         // 찾기 시작하는 위치도 지정가능
-        System.out.println(str.indexOf("하", 4));
+        System.out.println(str.indexOf("하", 1));
 
         String str2 = "java.lang.String";
         // 시작지점부터 값의 위치 찾기
