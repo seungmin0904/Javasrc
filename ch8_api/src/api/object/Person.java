@@ -18,6 +18,12 @@ public class Person {
     }
 
     @Override
+    public int hashCode() {
+        return this.id.hashCode();
+
+    }
+
+    @Override
     public boolean equals(Object obj) {
         if (obj instanceof Person) {
             Person p = (Person) obj;
