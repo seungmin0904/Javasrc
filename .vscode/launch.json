@@ -1,0 +1,239 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "FileInputStreamEX2",
+            "request": "launch",
+            "mainClass": "io.FileInputStreamEX2",
+            "projectName": "Javasrc_9b57517f"
+        },
+        {
+            "type": "java",
+            "name": "BoxEX",
+            "request": "launch",
+            "mainClass": "generics.BoxEX",
+            "projectName": "Javasrc_9b57517f"
+        },
+        {
+            "type": "java",
+            "name": "FileInputStreamEX1",
+            "request": "launch",
+            "mainClass": "io.FileInputStreamEX1",
+            "projectName": "Javasrc_9b57517f"
+        },
+        {
+            "type": "java",
+            "name": "FileEx1",
+            "request": "launch",
+            "mainClass": "io.FileEx1",
+            "projectName": "Javasrc_9b57517f"
+        },
+        {
+            "type": "java",
+            "name": "FileEx2",
+            "request": "launch",
+            "mainClass": "io.FileEx2",
+            "projectName": "Javasrc_9b57517f"
+        },
+        {
+            "type": "java",
+            "name": "ifTest4",
+            "request": "launch",
+            "mainClass": "condition.ifTest4",
+            "projectName": "Javasrc_7f9b379d"
+        },
+        {
+            "type": "java",
+            "name": "ifTest2",
+            "request": "launch",
+            "mainClass": "condition.ifTest2",
+            "projectName": "Javasrc_7f9b379d"
+        },
+        {
+            "type": "java",
+            "name": "DaoEx",
+            "request": "launch",
+            "mainClass": "Inter.DaoEx",
+            "projectName": "Javasrc_7f9b379d"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "OracleDBExample"
+        },
+        {
+            "type": "java",
+            "name": "deleteEmployee",
+            "request": "launch",
+            "mainClass": "deleteEmployee",
+            "projectName": "OracleDBExample"
+        },
+        {
+            "type": "java",
+            "name": "updateSalary",
+            "request": "launch",
+            "mainClass": "updateSalary",
+            "projectName": "OracleDBExample"
+        },
+        {
+            "type": "java",
+            "name": "getEmployees",
+            "request": "launch",
+            "mainClass": "getEmployees",
+            "projectName": "OracleDBExample"
+        },
+        {
+            "type": "java",
+            "name": "EmployeeDAO",
+            "request": "launch",
+            "mainClass": "EmployeeDAO",
+            "projectName": "OracleDBExample"
+        },
+        {
+            "type": "java",
+            "name": "StringEx3",
+            "request": "launch",
+            "mainClass": "api.string.StringEx3",
+            "projectName": "Javasrc_7f9b379d"
+        },
+        {
+            "type": "java",
+            "name": "StringEx1",
+            "request": "launch",
+            "mainClass": "api.string.StringEx1",
+            "projectName": "Javasrc_7f9b379d"
+        },
+        {
+            "type": "java",
+            "name": "StringEx4",
+            "request": "launch",
+            "mainClass": "api.string.StringEx4",
+            "projectName": "Javasrc_7f9b379d"
+        },
+        {
+            "type": "java",
+            "name": "StringEx2",
+            "request": "launch",
+            "mainClass": "api.string.StringEx2",
+            "projectName": "Javasrc_7f9b379d"
+        },
+        {
+            "type": "java",
+            "name": "NumberFormatEx",
+            "request": "launch",
+            "mainClass": "exception.NumberFormatEx",
+            "projectName": "Javasrc_7f9b379d"
+        },
+        {
+            "type": "java",
+            "name": "ArrayEx",
+            "request": "launch",
+            "mainClass": "exception.ArrayEx",
+            "projectName": "Javasrc_7f9b379d"
+        },
+        {
+            "type": "java",
+            "name": "ListEx1",
+            "request": "launch",
+            "mainClass": "api.util.ListEx1",
+            "projectName": "Javasrc_7f9b379d"
+        },
+        {
+            "type": "java",
+            "name": "TryWithEx",
+            "request": "launch",
+            "mainClass": "exception.TryWithEx",
+            "projectName": "Javasrc_7f9b379d"
+        },
+        {
+            "type": "java",
+            "name": "CheckedEx1",
+            "request": "launch",
+            "mainClass": "exception.CheckedEx1",
+            "projectName": "Javasrc_7f9b379d"
+        },
+        {
+            "type": "java",
+            "name": "DateEx",
+            "request": "launch",
+            "mainClass": "api.util.DateEx",
+            "projectName": "Javasrc_7f9b379d"
+        },
+        {
+            "type": "java",
+            "name": "MathEx1",
+            "request": "launch",
+            "mainClass": "api.math.MathEx1",
+            "projectName": "Javasrc_7f9b379d"
+        },
+        {
+            "type": "java",
+            "name": "DriverEx",
+            "request": "launch",
+            "mainClass": "Inter.DriverEx",
+            "projectName": "Javasrc_7f9b379d"
+        },
+        {
+            "type": "java",
+            "name": "ArthmeticEx3",
+            "request": "launch",
+            "mainClass": "op.ArthmeticEx3",
+            "projectName": "Javasrc_7f9b379d"
+        },
+        {
+            "type": "java",
+            "name": "ArthmeticEx2",
+            "request": "launch",
+            "mainClass": "op.ArthmeticEx2",
+            "projectName": "Javasrc_7f9b379d"
+        },
+        {
+            "type": "java",
+            "name": "Print",
+            "request": "launch",
+            "mainClass": "ch1.Print",
+            "projectName": "Javasrc_7f9b379d"
+        },
+        {
+            "type": "java",
+            "name": "CastingEx1",
+            "request": "launch",
+            "mainClass": "ch1.CastingEx1",
+            "projectName": "Javasrc_7f9b379d"
+        },
+        {
+            "type": "java",
+            "name": "ScopeEx1",
+            "request": "launch",
+            "mainClass": "ch1.ScopeEx1",
+            "projectName": "Javasrc_7f9b379d"
+        },
+        {
+            "type": "java",
+            "name": "MathEx1",
+            "request": "launch",
+            "mainClass": "MathEx1",
+            "projectName": "Javasrc_7f9b379d"
+        },
+        {
+            "type": "java",
+            "name": "BoxEX",
+            "request": "launch",
+            "mainClass": "generics.BoxEX",
+            "projectName": "Javasrc_7f9b379d"
+        },
+        {
+            "type": "java",
+            "name": "Java Launch",
+            "request": "launch",
+            "mainClass": "OracleDBExample",
+            "vmArgs": "-cp ${workspaceFolder}/bin;${workspaceFolder}/lib/ojdbc8.jar"
+        }
+    ]
+}
