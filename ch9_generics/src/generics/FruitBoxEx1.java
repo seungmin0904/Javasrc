@@ -1,6 +1,10 @@
 package generics;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
 class Fruit {
     @Override
@@ -37,6 +41,10 @@ class Box3<T> {
         return list.get(i);
     }
 
+    public ArrayList<T> geList() {
+        return list;
+    }
+
     int size() {
         return list.size();
     }
@@ -57,6 +65,9 @@ class Toy {
 }
 
 public class FruitBoxEx1 {
+
+    Comparator c;
+
     public static void main(String[] args) {
         Box3<Fruit> fru = new Box3();
         Box3<Apple> apl = new Box3();
@@ -69,6 +80,11 @@ public class FruitBoxEx1 {
 
         // apl.add(new Fruit()); (X)
         toy.add(new Toy());
+
+        // sort 대상 리스트, Comparator<? super T> c
+        // <? super Apple> : Apple 클래스 + 부모(Fruit,Object)
+        List<Apple> list = new ArrayList<>();
+        Collections.sort(list, null);
 
     }
 }
