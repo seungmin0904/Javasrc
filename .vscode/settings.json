@@ -1,6 +1,7 @@
 {
     "java.project.referencedLibraries": [
-        "javaDBProject\\lib\\ojdbc8.jar"
+        "javaDBProject\\lib\\ojdbc11.jar",
+        "c:\\Users\\soldesk\\Downloads\\lombok.jar"
     ],
     "java.project.sourcePaths": [
         "javaDBProject/src",
@@ -13,14 +14,8 @@
         "ch7_exception/src",
         "ch8_api/src",
         "ch9_generics/src",
-        
-
-
-
-        
-        
     ],
     "java.project.outputPath": "Javasrc/bin",
     "java.format.settings.url": ".vscode/java-formatter.xml",
-    "java.configuration.updateBuildConfiguration": "interactive"
+    "java.configuration.updateBuildConfiguration": "automatic"
 }

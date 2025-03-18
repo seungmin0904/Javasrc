@@ -6,6 +6,69 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CarEx",
+            "request": "launch",
+            "mainClass": "poly.CarEx",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "ReaderEx3",
+            "request": "launch",
+            "mainClass": "io.ReaderEx3",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "WriterEx2",
+            "request": "launch",
+            "mainClass": "io.WriterEx2",
+            "projectName": "Javasrc_9b57517f"
+        },
+        {
+            "type": "java",
+            "name": "WriterEx1",
+            "request": "launch",
+            "mainClass": "io.WriterEx1",
+            "projectName": "Javasrc_9b57517f"
+        },
+        {
+            "type": "java",
+            "name": "ScannerEx1",
+            "request": "launch",
+            "mainClass": "io.ScannerEx1",
+            "projectName": "Javasrc_9b57517f"
+        },
+        {
+            "type": "java",
+            "name": "ReaderEx3",
+            "request": "launch",
+            "mainClass": "io.ReaderEx3",
+            "projectName": "Javasrc_9b57517f"
+        },
+        {
+            "type": "java",
+            "name": "ReaderEx2",
+            "request": "launch",
+            "mainClass": "io.ReaderEx2",
+            "projectName": "Javasrc_9b57517f"
+        },
+        {
+            "type": "java",
+            "name": "ReaderEx1",
+            "request": "launch",
+            "mainClass": "io.ReaderEx1",
+            "projectName": "Javasrc_9b57517f"
+        },
+        {
+            "type": "java",
+            "name": "FileInputStreamEX3",
+            "request": "launch",
+            "mainClass": "io.FileInputStreamEX3",
+            "projectName": "Javasrc_9b57517f"
+        },
+        {
+            "type": "java",
             "name": "FileInputStreamEX2",
             "request": "launch",
             "mainClass": "io.FileInputStreamEX2",

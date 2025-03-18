@@ -1,5 +1,16 @@
 package oop;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+@ToString
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
 public class Account {
     // 속성 : 계좌번호(ano) , 계좌 주인 이름(owner), 잔액(balance)
     // 기능 : 예금+ , 출금-
@@ -11,25 +22,25 @@ public class Account {
     String owner;
     long balance;
 
-    public Account() {
-    }
+    // public Account() {
+    // }
 
-    public Account(String ano, String owner, int balance) {
-        this.ano = ano;
-        this.owner = owner;
-        this.balance = balance;
+    // public Account(String ano, String owner, int balance) {
+    //     this.ano = ano;
+    //     this.owner = owner;
+    //     this.balance = balance;
 
-    }
+    // }
 
-    @Override
-    public String toString() {
-        return "Account [ano=" + ano + ", owner=" + owner + ", balance=" + balance + "]";
-    }
+//     @Override
+//     public String toString() {
+//         return "Account [ano=" + ano + ", owner=" + owner + ", balance=" + balance + "]";
+//     }
 
-    // 기능 입금 출금
-    public long getBalance() {
-        return balance;
-    }
+//     // 기능 입금 출금
+//     public long getBalance() {
+//         return balance;
+//     }
 
     void deposit(long amount) {
 
@@ -54,4 +65,4 @@ public class Account {
             System.out.println("현재 잔액: " + balance + "원, 출금 시도 액: " + amount + "원");
         }
     }
-}
+ }
