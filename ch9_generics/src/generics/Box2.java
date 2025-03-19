@@ -13,16 +13,16 @@ public class Box2<T> {
     }
 }
 
-class BoxEX {
-    public static void main(String[] args) {
-        Box2<String> box = new Box2<>();
-        box.setItem("자바");
+// class BoxEX {
+// public static void main(String[] args) {
+// Box2<String> box = new Box2<>();
+// box.setItem("자바");
 
-        String result = box.getItem();
+// String result = box.getItem();
 
-        Box2<Integer> box2 = new Box2<>();
-        box2.setItem(1);
-        int i = box2.getItem();
+// Box2<Integer> box2 = new Box2<>();
+// box2.setItem(1);
+// int i = box2.getItem();
 
-    }
-}
+// }
+// }

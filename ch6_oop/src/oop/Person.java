@@ -6,7 +6,7 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
-@Setter
+@Setter // 모든 멤버 변수의 setter 메소드 작성
 
 public class Person {
     private String pno;
