@@ -1,6 +1,10 @@
 {
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
+<<<<<<< HEAD
         "c:\\Users\\USER\\Downloads\\lombok.jar"
+=======
+        "ch6_oop/lib/lombok.jar"
+>>>>>>> 30f1daa826d99713bc0f6cffa5315016d7221de7
     ]
 }
