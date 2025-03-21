@@ -16,6 +16,6 @@ public class StringEx5 {
             pos += target.length();
         }
         return count;
-
+            
     }
 }
