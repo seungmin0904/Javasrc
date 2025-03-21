@@ -6,12 +6,8 @@ import java.util.stream.IntStream;
 
 public class StreamEx6 {
     public static void main(String[] args) {
-<<<<<<< HEAD
         
          IntStream stream = IntStream.rangeClosed(1, 10);
-=======
-        IntStream stream = IntStream.rangeClosed(1, 10);
->>>>>>> 30f1daa826d99713bc0f6cffa5315016d7221de7
         // 2의 배수 개수
         Long cnt = stream.filter(i -> i % 2 == 0).count();
         System.out.println("배수 갯수 : " + cnt);
@@ -31,9 +27,5 @@ public class StreamEx6 {
         IntStream stream5 = IntStream.rangeClosed(1, 10);
         int dou4 = stream5.filter(i -> i % 2 == 0).sum();
         System.out.println("배수의 합 :" + dou4);
-<<<<<<< HEAD
-=======
-
->>>>>>> 30f1daa826d99713bc0f6cffa5315016d7221de7
     }
 }
