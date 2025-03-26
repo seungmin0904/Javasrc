@@ -34,8 +34,8 @@ public class EmpMain {
 
                 case 2:
                     eDto = updateInfo(scanner);
-                    eDao.update(eDto);
-                    System.out.println(result > 0 ? "수정 실패" : "수정 성공");
+                    result = eDao.update(eDto);
+                    System.out.println(result > 0 ? "수정 성공" : "수정 실패");
                     break;
 
                 case 3:

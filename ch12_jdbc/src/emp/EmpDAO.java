@@ -101,7 +101,7 @@ public class EmpDAO {
 
             result = pstmt.executeUpdate();
         } catch (Exception e) {
-
+            e.printStackTrace();
         } finally {
             close(con, pstmt);
         }
