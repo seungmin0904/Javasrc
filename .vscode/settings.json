@@ -1,8 +1,12 @@
 {
-"java.project.sourcePaths": ["src"],
+    "java.project.sourcePaths": [
+        "src"
+    ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
-        "c:\\Users\\USER\\Downloads\\lombok.jar"
-]
+        "c:\\Users\\USER\\Downloads\\lombok.jar",
+        "c:\\app\\soldesk\\product\\21c\\dbhomeXE\\jdbc\\lib\\ojdbc11.jar",
+        "c:\\Users\\soldesk\\Downloads\\lombok.jar"
+    ]
 }
