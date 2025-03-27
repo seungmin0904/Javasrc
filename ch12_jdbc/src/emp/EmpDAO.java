@@ -5,12 +5,14 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class EmpDAO {
     private Connection con;
     private PreparedStatement pstmt;
     private ResultSet rs;
-
+    private EmpDTO dto;
     // static : 변수,메서드 앞에 붙으면 공유(생성되는 모든 인스턴스가 같은걸 사용)
     // : 로드 시점이 가장 처음에 로드됨
     static {
@@ -57,6 +59,67 @@ public class EmpDAO {
     }
 
     // select , insert , update , delete 처리 메소드
+    // select
+    public List<EmpDTO> selectAll() {
+        con = getConnection();
+        List<EmpDTO> list = new ArrayList<>();
+        String sql = "SELECT * FROM emp_temp";
+        try {
+            pstmt = con.prepareStatement(sql);
+            rs = pstmt.executeQuery();
+
+            // rs 객체에 담긴 결과 옮기기 => DTO
+            while (rs.next()) {
+                EmpDTO eDto = new EmpDTO();
+
+                eDto.setEmpNo(rs.getInt("empno"));
+                eDto.setEName(rs.getString("ename"));
+                eDto.setJob(rs.getString("job"));
+                eDto.setMgr(rs.getInt("mgr"));
+                eDto.setHireDate(rs.getString("hiredate"));
+                eDto.setComm(rs.getInt("comm"));
+                eDto.setDeptNo(rs.getInt("deptno"));
+                eDto.setSal(rs.getInt("sal"));
+                list.add(eDto);
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            close(con, pstmt, rs);
+        }
+        return list;
+    }
+
+    public EmpDTO select(int empNo) {
+        con = getConnection();
+        EmpDTO eDto = null;
+        String sql = " SELECT * FROM emp_temp WHERE empno = ?";
+        try {
+            pstmt = con.prepareStatement(sql);
+
+            pstmt.setInt(1, empNo);
+            rs = pstmt.executeQuery();
+            // rs 객체에 담긴 결과 옮기기
+            if (rs.next()) {
+                eDto = new EmpDTO();
+
+                eDto.setEmpNo(rs.getInt("empno"));
+                eDto.setEName(rs.getString("ename"));
+                eDto.setJob(rs.getString("job"));
+                eDto.setMgr(rs.getInt("mgr"));
+                eDto.setHireDate(rs.getString("hiredate"));
+                eDto.setComm(rs.getInt("comm"));
+                eDto.setDeptNo(rs.getInt("deptno"));
+                eDto.setSal(rs.getInt("sal"));
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            close(con, pstmt, rs);
+        }
+        return eDto;
+    }
 
     // insert
     public int insert(EmpDTO eDto) {
@@ -64,7 +127,7 @@ public class EmpDAO {
         con = getConnection();
         int result = 0;
         try {
-            String sql = "insert into emp_temp (empNo, eName, job, mgr, hiredate, sal, comm, deptNo)";
+            String sql = "insert into emp_temp (empNo, eName, job, mgr, hiredate, sal, comm, deptNo) ";
             sql += "values(?,?,?,?,?,?,?,?)";
             pstmt = con.prepareStatement(sql);
             // 물음표 해결
